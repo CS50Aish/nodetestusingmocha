@@ -495,3 +495,97 @@ labuser@ubuntu2204:~/Desktop/nodetestusingmocha/DetectMultipleCallUsingDone$ npm
 
 
   2 passing (1s)
+
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha$ mkdir MochaHooksFunctionality
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha$ cd MochaHooksFunctionality/
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha/MochaHooksFunctionality$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (mochahooksfunctionality) 
+version: (1.0.0) 
+description: Projects using Mocha Functionality
+entry point: (index.js) 
+test command: 
+git repository: 
+keywords: 
+author: Aishwarya
+license: (ISC) 
+About to write to /home/labuser/Desktop/nodetestusingmocha/MochaHooksFunctionality/package.json:
+
+{
+  "name": "mochahooksfunctionality",
+  "version": "1.0.0",
+  "description": "Projects using Mocha Functionality",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aishwarya",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) 
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha/MochaHooksFunctionality$ npm init -y
+Wrote to /home/labuser/Desktop/nodetestusingmocha/MochaHooksFunctionality/package.json:
+
+{
+  "name": "mochahooksfunctionality",
+  "version": "1.0.0",
+  "description": "Projects using Mocha Functionality",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aishwarya",
+  "license": "ISC",
+  "keywords": []
+}
+
+
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha/MochaHooksFunctionality$ npm install mocha -D
+npm WARN deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm WARN deprecated glob@8.1.0: Glob versions prior to v9 are no longer supported
+
+added 72 packages, and audited 73 packages in 4s
+
+20 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha/MochaHooksFunctionality$ mkdir src test
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha/MochaHooksFunctionality$ cd src
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha/MochaHooksFunctionality/src$ touch app.js
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha/MochaHooksFunctionality/src$ cd ..
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha/MochaHooksFunctionality$ cd test
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha/MochaHooksFunctionality/test$ touch appTest.js
+
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha/MochaHooksFunctionality$ npm test
+
+> mochahooksfunctionality@1.0.0 test
+> mocha test/*.js
+
+
+
+  Mocha Hook Example
+This function call before all it - only once
+This function call before each it - again and again
+This is the first function
+    ✔ First test function
+This function call after each it - again and again
+This function call before each it - again and again
+This is second function
+    ✔ Second test function
+This function call after each it - again and again
+This function call after all it - only once
+
+
+  2 passing (21ms)

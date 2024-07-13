@@ -1,0 +1,15 @@
+{
+  "name": "mochahooksfunctionality",
+  "version": "1.0.0",
+  "description": "Projects using Mocha Functionality",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "author": "Aishwarya",
+  "license": "ISC",
+  "keywords": [],
+  "devDependencies": {
+    "mocha": "^10.6.0"
+  }
+}
