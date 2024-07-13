@@ -141,3 +141,15 @@ added 72 packages, and audited 73 packages in 4s
   run `npm fund` for details
 
 found 0 vulnerabilities
+
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha/ExpressionAndArrowStyle$ mocha appTest.js 
+
+
+  Simple Testing using expression style
+    ✔ sayHello testing using expression style
+
+  Simple Testing using arrow style
+    ✔ sayHello testing using arrow style
+
+
+  2 passing (16ms)
