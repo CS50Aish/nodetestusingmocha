@@ -220,3 +220,17 @@ added 72 packages, and audited 73 packages in 6s
   run `npm fund` for details
 
 found 0 vulnerabilities
+
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha/SyncAsyncTest/test$ npm test
+
+> syncasynctest@1.0.0 test
+> mocha test/*.js
+
+
+
+  Function Testing 
+    ✔ Synchronous Add Testing 
+    ✔ Asynchronous Add Testing 
+
+
+  2 passing (12ms)
