@@ -589,3 +589,79 @@ This function call after all it - only once
 
 
   2 passing (21ms)
+
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha$ mkdir MochaWithChai
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha$ cd MochaWithChai/
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha/MochaWithChai$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (mochawithchai) 
+version: (1.0.0) 
+description: 
+entry point: (index.js) 
+test command: 
+git repository: 
+keywords: 
+author: Aishwarya
+license: (ISC) 
+About to write to /home/labuser/Desktop/nodetestusingmocha/MochaWithChai/package.json:
+
+{
+  "name": "mochawithchai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aishwarya",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) 
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha/MochaWithChai$ 
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha/MochaWithChai$ npm init -y
+Wrote to /home/labuser/Desktop/nodetestusingmocha/MochaWithChai/package.json:
+
+{
+  "name": "mochawithchai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aishwarya",
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}
+
+
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha/MochaWithChai$ npm install mocha chai -D
+npm WARN deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm WARN deprecated glob@8.1.0: Glob versions prior to v9 are no longer supported
+
+added 79 packages, and audited 80 packages in 18s
+
+20 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+labuser@ubuntu2204:~/Desktop/nodetestusingmocha/MochaWithChai$ npm test
+
+> mochawithchai@1.0.0 test
+> mocha test/*.mjs
+
+
+
+  0 passing (10ms)
