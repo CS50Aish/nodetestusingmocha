@@ -1,0 +1,19 @@
+{
+  "name": "detectmultiplecallusingdone",
+  "version": "1.0.0",
+  "description": "Project using Mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "author": "Aishwarya",
+  "license": "ISC",
+  "keywords": [],
+  "devDependencies": {
+    "mocha": "^10.6.0",
+    "node-fetch-commonjs": "^3.3.2"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
